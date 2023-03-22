@@ -2,11 +2,382 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+p,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+
+}
+button{
+    cursor:pointer;
+}
+
+address{
+    font-style: normal;
+
+}
+
 :root {
     --main-text-color: #555555;
     --title-color:  #303030;
     ---section-text-color: #9DA4BD;
     --white-color:  #FFFFFF;
+    --button-bg: #FF6C00;
+    --background-item-colors: #F7F7F7; 
 
     
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    border: 1px solid red;
+
+}
+
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* --------------header---------------- */
+.header-flex-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.header {
+    background-color: var(--main-text-color);
+    padding-top: 32px;
+
+
+}
+.header-navigation {
+    display: flex;
+    align-items:center;
+    margin-right: auto;
+    
+ 
+
+
+}
+.header-logo {
+    margin-right: 130px;
+
+}
+.header-list {
+    display: flex; 
+    gap: 30px;
+
+
+}
+
+.header-phone{
+    margin-right: 43px ;
+}
+
+.header-item{
+    /* margin-right: 30px; */
+}
+
+
+ 
+.header-item:last-child{
+    /* margin: 0; */
+}
+
+
+}
+.header-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--background-item-colors);
+
+}
+
+.header-link:hover,
+.header-link:focus{
+    color:var(--button-bg)
+}
+
+
+
+.header-phone {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white-color);
+
+}
+.header-phone:hover,
+.header-phone:focus{
+    color:var(--button-bg)
+}
+
+
+.header-button {
+    min-width: 160px;
+    height: 40px;
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    cursor: pointer;
+    background-color:var(--main-text-color);
+
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+
+
+}
+.header-button:hover,
+.header-button:focus{
+    background: var(--button-bg)
+}
+
+/* ---------------section hero-------------- */
+
+.hero-container{
+    display: flex;
+    background: #000;
+    flex-grow: 1;
+    padding: 272px, 100px, 208px, 100px;
+}
+
+.hero {
+    background: var(---section-text-color);
+    }
+.hero-list {
+
+}
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color:var(--title-color)
+}   
+
+.hero-link:hover,
+.hero-link:focus{
+    background: var(--button-bg)
+}
+
+.hero-item {
+
+}
+.hero-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--white-color);
+}
+.hero-bottom-text {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: var(---section-text-color)
+}
+
+
+/* -------------------------about------------------- */
+
+.about {
+    padding: 120px 0 120px 0;
+}
+.about-list {
+}
+
+.about-link {
+}
+
+
+
+.about-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color:var(--title-color);
+}
+
+.about-title {
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color:var(--title-color);
+}
+.about-bottom-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color:var(--main-text-color);
+}
+.about-text {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+
+    color:var(--main-text-color);
+}
+.about-btn {
+    font-family: 'Open Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    color: var(--title-color)
+}
+
+.about-btn:hover,
+.about-btn:focus{
+    background: var(--button-bg)
+}
+
+/* -------------------------PRICES------------------- */
+.pricese {
+ background-color:var(--title-color)
+}
+
+.pricese-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.pricese-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+
+    color: var(--white-color)
+}
+
+.pricese-list {
+
+}
+
+
+.pricese-item {
+
+}
+
+.pricese-item-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    
+    color: var(---section-text-color)
+
+}
+
+.pricese-button {
+    font-family: 'Open Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    
+    color: var(--white-color)
+}
+
+.pricese-button:hover,
+.pricese-button:focus{
+    background-color:var(--button-bg)
+}
+
+/* ------------benefits----------------------- */
+
+.benefits {
+    
+}
+.benefits-list {
+}
+.benefits-item {
+    background-color: var(--background-item-colors);
+}
+.count {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: var(--title-color)
+}
+.benefits-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+
+    color: var(--title-color)
+}
+.benefits-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    
+    color: var(--title-color)
+}
+.benefits-title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+
+    color: var(--title-color)
+}
+.benefits-bottom-text {
 }
