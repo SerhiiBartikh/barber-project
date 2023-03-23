@@ -161,15 +161,30 @@ address{
 
 .hero-container{
     display: flex;
-    background: #000;
+    background-color:#FFFFFF;
+    
+  
+    
+}
+.hero-wrap{
+    /* display:flex;
+    flex-direction: column; */
+    background: black;
     flex-grow: 1;
-    padding: 272px, 100px, 208px, 100px;
+    border: 1 solid white;
+    
+    padding-top: 272px;
+    padding-right: 526px;
+    padding-bottom: 208px;
+    padding-left: 100px;
+   
 }
 
 .hero {
-    background: var(---section-text-color);
+    
     }
 .hero-list {
+    width: 100px;
 
 }
 
@@ -214,10 +229,20 @@ address{
 
 /* -------------------------about------------------- */
 
+.container-about{
+    display: flex;
+}
+
+.about-wraper{
+    margin-left: 30px;;
+    padding-right: 100px;
+}
 .about {
     padding: 120px 0 120px 0;
 }
 .about-list {
+    display: flex;
+    gap: 30px;
 }
 
 .about-link {
@@ -231,6 +256,7 @@ address{
     line-height: 1.36;
     text-transform: uppercase;
     color:var(--title-color);
+    margin-bottom: 20px;
 }
 
 .about-title {
@@ -241,6 +267,7 @@ address{
     line-height: 1.16;
     letter-spacing: 0.02em;
     color:var(--title-color);
+    margin-bottom: 20px;
 }
 .about-bottom-text{
     font-weight: 400;
@@ -248,6 +275,7 @@ address{
     line-height: 1.67;
     letter-spacing: 0.02em;
     color:var(--main-text-color);
+    margin-bottom: 20px;
 }
 .about-text {
     font-size: 14px;
@@ -255,8 +283,11 @@ address{
     letter-spacing: 0.02em;
 
     color:var(--main-text-color);
+    margin-bottom: 20px;
 }
 .about-btn {
+    min-width: 160px;
+    height: 40px;
     font-family: 'Open Sans' sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -265,6 +296,8 @@ address{
     letter-spacing: 0.09em;
     text-transform: uppercase;
     cursor: pointer;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
 
     color: var(--title-color)
 }
@@ -335,16 +368,33 @@ address{
 }
 
 /* ------------benefits----------------------- */
+.benefits-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
 
 .benefits {
     
 }
 .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
 }
 .benefits-item {
+    display: flex;
+    flex-direction: column;
+    
+    width: 170px;
+    height: 133px;
     background-color: var(--background-item-colors);
 }
 .count {
+   padding-top: 20px;
     font-weight: 700;
     font-size: 42px;
     line-height: 1.35;
@@ -380,4 +430,65 @@ address{
     color: var(--title-color)
 }
 .benefits-bottom-text {
+}
+
+/* ----------------barber section------------- */
+
+.barbers{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: var(--background-item-colors);
+}
+.our-barbers{
+    background-color: blue;
+}
+
+  
+
+.barbers-top-text{
+    margin-bottom: 20px;
+}
+
+.barber-title{
+    margin-bottom: 44px;
+}
+
+.barbers-list{
+    display: flex;
+    gap: 30px;
+    
+}
+.barbers-list li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-barberstitle{
+    margin-top: 30px;
+    margin-bottom: 8px;
+    justify-content: center;
+
+
+}
+
+.barbers-description{
+
+}
+
+/* ---------------------beard section---------------------- */
+
+.beard{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.beard-top-text{
+    margin-bottom: 44px;
+}
+
+.beard-list{
+    display: flex;
+    gap: 30px;
 }
