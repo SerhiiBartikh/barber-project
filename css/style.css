@@ -42,7 +42,7 @@ address{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
@@ -62,8 +62,8 @@ address{
 
 
 .header {
-    background-color: var(--main-text-color);
-    padding-top: 32px;
+    /* background-color: var(--main-text-color); */
+    
 
 
 }
@@ -78,13 +78,18 @@ address{
 }
 .header-logo {
     margin-right: 130px;
+    padding-top: 32px;
 
 }
 .header-list {
     display: flex; 
     gap: 30px;
+    padding-top: 52px;
 
 
+}
+.address-container{
+    padding-top: 52px;
 }
 
 .header-phone{
@@ -169,7 +174,7 @@ address{
 .hero-wrap{
     /* display:flex;
     flex-direction: column; */
-    background: black;
+    /* background: black; */
     flex-grow: 1;
     border: 1 solid white;
     
@@ -177,6 +182,11 @@ address{
     padding-right: 526px;
     padding-bottom: 208px;
     padding-left: 100px;
+
+    background-image: url(../img/Slider\ img\ 3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
    
 }
 
